@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 299.5
   },
   "right": {
     "id": "4d25652b997da3b4",
@@ -164,8 +164,19 @@
               "icon": "lucide-list",
               "title": "AGENTS 的大纲"
             }
+          },
+          {
+            "id": "524991c0dae8f4a9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -186,12 +197,12 @@
   },
   "active": "07c8a81b93ccea76",
   "lastOpenFiles": [
-    "未命名.base",
-    "AGENTS.md",
+    "交易心理分析/问答.md",
     "投资交易心理分析（典藏版）/问答.md",
+    "AGENTS.md",
+    "未命名.base",
     "投资交易心理分析（典藏版）/投资交易心理分析（典藏版） (【美】布雷特N. 斯蒂恩博格（Brett N. Steenbarger）) (z-library.sk, 1lib.sk, z-lib.sk).epub",
     "投资交易心理分析（典藏版）",
-    "交易心理分析/问答.md",
     "交易心理分析/交易心理分析 (马克·道格拉斯) (Z-Library).epub",
     "交易心理分析"
   ]
