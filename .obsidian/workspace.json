@@ -180,17 +180,19 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5bfeb61b0659aae3",
+  "active": "07c8a81b93ccea76",
   "lastOpenFiles": [
+    "未命名.base",
+    "AGENTS.md",
     "投资交易心理分析（典藏版）/问答.md",
     "投资交易心理分析（典藏版）/投资交易心理分析（典藏版） (【美】布雷特N. 斯蒂恩博格（Brett N. Steenbarger）) (z-library.sk, 1lib.sk, z-lib.sk).epub",
     "投资交易心理分析（典藏版）",
     "交易心理分析/问答.md",
     "交易心理分析/交易心理分析 (马克·道格拉斯) (Z-Library).epub",
-    "AGENTS.md",
     "交易心理分析"
   ]
 }
