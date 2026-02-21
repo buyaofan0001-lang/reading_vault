@@ -72,4 +72,4 @@ Styling rules:
 - If the file is large, build the index incrementally and cache results per book.
 - If the vault path changes, prompt the user to update it before proceeding.
 
-12222
+
