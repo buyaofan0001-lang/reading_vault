@@ -4,12 +4,12 @@
 Build a Codex-based flow where the user selects a book by name, Codex reads the book content from the matching folder, answers questions, and appends the Q&A to the Obsidian vault.
 
 ## Vault Location
-`/Users/liuguan1/读书笔记`
+`/Users/liuguan1/Documents/github/reading_vault`
 
 ## Book Folder Convention
 - Each book has its own folder under the vault.
 - Folder name equals the book title exactly.
-- Example: `/Users/liuguan1/读书笔记/书名/`
+- Example: `/Users/liuguan1/Documents/github/reading_vault/书名/`
 
 ## Source Files
 - The book folder contains one or more `*.pdf` or `*.epub` files.
@@ -27,7 +27,7 @@ Build a Codex-based flow where the user selects a book by name, Codex reads the 
 
 ## Q&A Log Format
 Append to a single file:
-`/Users/liuguan1/读书笔记/<书名>/问答.md`
+`/Users/liuguan1/Documents/github/reading_vault/<书名>/问答.md`
 
 Use an Obsidian-friendly card format per entry:
 
@@ -67,8 +67,35 @@ Styling rules:
 - Do not fetch web sources unless the user explicitly requests it.
 - For follow-up questions, explicitly record the relation to the referenced prior question in `问答.md`.
 
+## Chat Backup (每次对话结束自动备份)
+目标：每次助手回复后，将“本轮对话”追加备份到 Obsidian。
+
+### 备份路径
+`/Users/liuguan1/Documents/github/reading_vault/对话备份/对话记录.md`
+
+### 备份格式（参考 `/投资交易心理分析（典藏版）/问答.md` 风格）
+```
+## 对话记录
+
+> [!info] 记录时间
+> `<YYYY-MM-DD HH:mm>`
+
+> [!abstract] 当前书籍
+> <book title or 空>
+
+> [!question] 用户
+> <user message>
+
+> [!note] 助手
+> <assistant response>
+```
+
+### 规则
+- 每次回复完成后立刻追加一条记录。
+- 若当前没有书籍上下文，“当前书籍”填 `空`。
+- 保持与 `问答.md` 相同的 callout 风格，便于 Obsidian 统一展示。
+
 ## Edge Cases
 - If the book folder name is ambiguous, ask the user to confirm the exact folder.
 - If the file is large, build the index incrementally and cache results per book.
 - If the vault path changes, prompt the user to update it before proceeding.
-
