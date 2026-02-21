@@ -164,19 +164,9 @@
               "icon": "lucide-list",
               "title": "AGENTS 的大纲"
             }
-          },
-          {
-            "id": "524991c0dae8f4a9",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
