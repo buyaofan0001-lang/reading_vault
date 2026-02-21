@@ -71,5 +71,3 @@ Styling rules:
 - If the book folder name is ambiguous, ask the user to confirm the exact folder.
 - If the file is large, build the index incrementally and cache results per book.
 - If the vault path changes, prompt the user to update it before proceeding.
-
-
