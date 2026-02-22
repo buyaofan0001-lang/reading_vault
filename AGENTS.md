@@ -4,12 +4,12 @@
 Build a Codex-based flow where the user selects a book by name, Codex reads the book content from the matching folder, answers questions, and appends the Q&A to the Obsidian vault.
 
 ## Vault Location
-`/Users/liuguan1/读书笔记`
+`/Users/liuguan1/Documents/github/reading_vault`
 
 ## Book Folder Convention
 - Each book has its own folder under the vault.
 - Folder name equals the book title exactly.
-- Example: `/Users/liuguan1/读书笔记/书名/`
+- Example: `/Users/liuguan1/Documents/github/reading_vault/书名/`
 
 ## Source Files
 - The book folder contains one or more `*.pdf` or `*.epub` files.
@@ -27,7 +27,7 @@ Build a Codex-based flow where the user selects a book by name, Codex reads the 
 
 ## Q&A Log Format
 Append to a single file:
-`/Users/liuguan1/读书笔记/<书名>/问答.md`
+`/Users/liuguan1/Documents/github/reading_vault/<书名>/问答.md`
 
 Use an Obsidian-friendly card format per entry:
 
