@@ -71,4 +71,4 @@ Ernest P. Chan
 	“Sometimes, however, we do need to transform predictors nonlinearly before the SVM is able to classify the data. These transformations are carried out by the Kernel function. Instead of a linear Kernel function, we can specify a polynomial function. Instead of setting the Kernel scale to 1, we can specify “auto” such that the algorithm will select an optimal Kernel scale.” 使用核函数当无法用线来区分标签的时候该用非线性来区分
 
 
-# HMM  Hidden Markov Model
+# HMM  Hidden Markov Model （无监督的例子）
