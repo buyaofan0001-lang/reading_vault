@@ -37,5 +37,10 @@ Ernest P. Chan
 		  1.分了之后方差相比父节点没有减小
 		  2.父节点几乎没有样本了 
 		   3.最大节点数达到了
-		   
-	 
+
+# Cross Validation
+
+	“Cross validation is a technique for reducing overfitting by testing for out‐of‐sample performance as part of model building. ”
+将样本外测试表现作为构建模型的一部分用来防治过拟合
+		做法 ： 1. 将训练集随机分成k个子集  2.
+		
