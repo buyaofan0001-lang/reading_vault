@@ -68,3 +68,4 @@ Ernest P. Chan
 
 # SVM
 	通过用不同的特征把样本划分在不同的位置上 打上标签 标签是离散的不是连续的，为了让他达到最佳 我们需要规定好margin 即离分割线最近的两种样本之间向量的距离
+	“Sometimes, however, we do need to transform predictors nonlinearly before the SVM is able to classify the data. These transformations are carried out by the Kernel function. Instead of a linear Kernel function, we can specify a polynomial function. Instead of setting the Kernel scale to 1, we can specify “auto” such that the algorithm will select an optimal Kernel scale.” 使用核函数当无法用线来区分标签的时候该用非线性来区分
