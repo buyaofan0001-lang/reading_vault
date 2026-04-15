@@ -30,5 +30,7 @@ Ernest P. Chan
 
 
 # Regression Tree
-	
+	所有特征共同作用于数据中 这点与逐步回归不同 
+	 原理 ：“Once the algorithm picks the “best” predictor based on some criterion, it will split the data into two subsets by applying an inequality condition on this predictor (such as “previous two‐day return  1.5%”). 如果基于某个准则 算法找到了好的切分方式 它就会将数据切成两块
+	 
 	 
