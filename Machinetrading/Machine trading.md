@@ -49,7 +49,10 @@ Ernest P. Chan
 		3. 从k个预测里面取平均值得到预测值
 
 #  Random Subspace and Random Forest
-
+	random subspace : 随机抽特征 用特征去训练模型 因此得到了很多的模型。然后将这些很多模型（若学习者）合在一起让他们的预测更加健壮也就是将他们预测的结果平均起来 -> 这也叫做集成学习方法 -> 然而这个只适用于分类问题且当我们的特征够多的时候才表现的好
+	 random forest ： 随机森林 也是一种集成学习方法  ， 是bagging法和random subspace的杂交
+		
+	
 
 
 		
