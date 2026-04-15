@@ -18,7 +18,7 @@
 
 
 
-$$“model=stepwiselm([ret1(trainset) ret2(trainset) ret5(trainset) ret20(trainset)], retFut1(trainset), 'Upper', 'linear')  
+<“model=stepwiselm([ret1(trainset) ret2(trainset) ret5(trainset) ret20(trainset)], retFut1(trainset), 'Upper', 'linear') >
 
 The input parameter name/value pair “Upper” with its value “linear” indicates that we only want linear functions of the independent variables as predictors, not products of them.” upper 和 linnear 限制模型搜索的上限只允许包含线形项
 
@@ -29,8 +29,6 @@ Ernest P. Chan
 
 
 
-
-
-
-
+# Regression Tree
+	
 	 
