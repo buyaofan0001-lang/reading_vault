@@ -63,3 +63,7 @@ Ernest P. Chan
 
 ![[Pasted image 20260415152040.png]]
 	如何看这个模型好不好？ 看它每一个节点GDIs的和
+
+
+
+# SVM
