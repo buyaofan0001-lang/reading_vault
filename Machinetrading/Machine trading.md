@@ -33,6 +33,9 @@ Ernest P. Chan
 	所有特征共同作用于数据中 这点与逐步回归不同 
 	 原理 ：“Once the algorithm picks the “best” predictor based on some criterion, it will split the data into two subsets by applying an inequality condition on this predictor (such as “previous two‐day return  1.5%”). 如果基于某个准则 算法找到了好的切分方式 它就会将数据切成两块
 	 这个指标通常是使得子节点里面的方差最小化
-	 
-	 
+	  在以下几种情况下要停止优化 ： 
+		  1.分了之后方差相比父节点没有减小
+		  2.父节点几乎没有样本了 
+		   3.最大节点数达到了
+		   
 	 
