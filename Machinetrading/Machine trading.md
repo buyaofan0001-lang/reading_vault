@@ -2,5 +2,20 @@
 
 - 在训练集上训练得到的结果会明显好于测试集 ->
 - CAGR : compound annual growth rate  -> 真实年化
--
--
+
+### “Stepwise regression differs from multiple regression in that it starts with just one “best” predictor based on some common goodness of fit criterion such as the sum of squared error (the default for MATLAB's stepwiselm function), Akaike information criterion (AIC), or Bayesian information criterion (BIC)”
+
+逐步回归和多元回归的方法不同 ： 
+	逐步回归一开始只选一个当前看来最好的变量，然后再一步步决定要不要加入别的变量，或者删掉已经加入的变量
+	 多元回归：全部特征都丢进去处理
+不断丢进不同的特征基于这些指标：
+	  SSE ： 残差平方和  -> 减小模型的拟合误差
+	  AIC ： 赤池信息准则  -> 即看模型效果也惩罚模型太复杂 ，因为如果只使用SSE： 丢进更多的特征拟合自然好 但无法避免过拟合 因此-> 拟合的好 加分 ，拟合不好 扣分 。
+	  ![[Pasted image 20260415124955.png]]
+	  
+	  BIC ： 贝叶斯信息准则 
+  ,![[Pasted image 20260415125103.png]]
+
+
+
+	 
