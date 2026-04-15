@@ -82,4 +82,4 @@ Ernest P. Chan
 
 
 # Neural Network
-	“We can understand neural network as simply a way to approximate any function of an arbitrary number of predictor variables by a linear function of sigmoid functions” 
+	“We can understand neural network as simply a way to approximate any function of an arbitrary number of predictor variables by a linear function of sigmoid functions” 我们可以把神经网络理解成一种方法：对于任意多个输入变量构成的复杂函数关系，神经网络都可以用很多个 sigmoid 函数再做线性组合，去近似这个函数。
