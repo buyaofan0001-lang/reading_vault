@@ -83,3 +83,6 @@ Ernest P. Chan
 
 # Neural Network
 	“We can understand neural network as simply a way to approximate any function of an arbitrary number of predictor variables by a linear function of sigmoid functions” 我们可以把神经网络理解成一种方法：对于任意多个输入变量构成的复杂函数关系，神经网络都可以用很多个 sigmoid 函数再做线性组合，去近似这个函数。
+	“How many iterations of these sigmoid functions to use, how much weight to put on each, how to connect the output of one such function to the input of another, can only be decided by experimentation and optimization on the training set. Determining the weight of each function based on the training data set is the job of the training algorithm, which is also an optimization problem on the training set.”
+神经网络里要放多少个 sigmoid 单元，用多大权重，前一个单元的输出怎么接到后一个单元的输入，这些都不能只靠事先想象决定，通常要在训练集上不断试验和优化。  
+根据训练数据去确定这些权重，是训练算法的工作，而这个工作本质上也是在训练集上解一个优化问题
