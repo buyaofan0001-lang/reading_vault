@@ -88,3 +88,7 @@ Ernest P. Chan
 根据训练数据去确定这些权重，是训练算法的工作，而这个工作本质上也是在训练集上解一个优化问题
 	核心流程 ： 
 	输入n个特征 -> 神经元计算给每个特征给予权重wi zj​=wj1​x1​+wj2​x2​+wj3​x3​+wj4​x4​+bj​ ->过一遍sigmoid（zj）得到aj 放进下一个层神经元->最后吐出来
+
+	where trainRatio indicates the percentage of the training data set we will randomly pick for prediction error minimization, valRatio indicates the percentage of the validation set, and testRatio is the percentage of the test set. 这里分成了三个集合 训练集 验证集 测试集 训练集自己定权重 验证集调结构 测试集看泛化性
+
+
