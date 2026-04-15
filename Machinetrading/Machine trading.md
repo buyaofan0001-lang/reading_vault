@@ -72,3 +72,7 @@ Ernest P. Chan
 
 
 # HMM  Hidden Markov Model （无监督的例子）
+	例子 ： 人们无法清楚的定义bull or bear 但是通过hhm 可以对市场的状态进行分类 
+	我们会得到两种矩阵 ： 
+	1. 状态转移矩阵 已只今天是bull 明天是bull or bear的概率 或者 已知今天是bear 明天是bear or bull 的概率 
+	2. 发射矩阵 bull前提下出现下跌日的概率 或者 上涨日的概率 
