@@ -86,4 +86,5 @@ Ernest P. Chan
 	“How many iterations of these sigmoid functions to use, how much weight to put on each, how to connect the output of one such function to the input of another, can only be decided by experimentation and optimization on the training set. Determining the weight of each function based on the training data set is the job of the training algorithm, which is also an optimization problem on the training set.”
 神经网络里要放多少个 sigmoid 单元，用多大权重，前一个单元的输出怎么接到后一个单元的输入，这些都不能只靠事先想象决定，通常要在训练集上不断试验和优化。  
 根据训练数据去确定这些权重，是训练算法的工作，而这个工作本质上也是在训练集上解一个优化问题
-	
+	核心流程 ： 
+	输入n个特征 -> 神经元计算给每个特征给予权重wi zj​=wj1​x1​+wj2​x2​+wj3​x3​+wj4​x4​+bj​ ->过一遍sigmoid（zj）得到aj 放进下一个层神经元->最后吐出来
