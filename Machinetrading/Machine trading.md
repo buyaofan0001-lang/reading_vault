@@ -42,5 +42,6 @@ Ernest P. Chan
 
 	“Cross validation is a technique for reducing overfitting by testing for out‐of‐sample performance as part of model building. ”
 将样本外测试表现作为构建模型的一部分用来防治过拟合
-		做法 ： 1. 将训练集随机分成k个子集  2.
+		做法 ： 1. 将训练集随机分成k个子集  2.用k-1个子集训练model 3.用该model在没被训练到的子集上进行测试 4.测试模型的精准度 5.从k个模型中选择一个最好的测试
+		
 		
