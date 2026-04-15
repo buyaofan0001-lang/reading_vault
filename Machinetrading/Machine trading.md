@@ -13,10 +13,12 @@
 	  AIC ： 赤池信息准则  -> 即看模型效果也惩罚模型太复杂 ，因为如果只使用SSE： 丢进更多的特征拟合自然好 但无法避免过拟合 因此-> 拟合的好 加分 ，拟合不好 扣分 。
 	  ![[Pasted image 20260415124955.png]]
 	  
-	  BIC ： 贝叶斯信息准则 
+	  BIC ： 贝叶斯信息准则
   ,![[Pasted image 20260415125103.png]]
-$$“model=stepwiselm([ret1(trainset) ret2(trainset) ret5(trainset) ret20(trainset)], retFut1(trainset), 'Upper', 'linear')  
 
+
+
+$$“model=stepwiselm([ret1(trainset) ret2(trainset) ret5(trainset) ret20(trainset)], retFut1(trainset), 'Upper', 'linear')  
 
 The input parameter name/value pair “Upper” with its value “linear” indicates that we only want linear functions of the independent variables as predictors, not products of them.” upper 和 linnear 限制模型搜索的上限只允许包含线形项
 
@@ -24,6 +26,11 @@ The input parameter name/value pair “Upper” with its value “linear” indi
 Machine Trading
 Ernest P. Chan
 此材料可能受版权保护。
+
+
+
+
+
 
 
 	 
