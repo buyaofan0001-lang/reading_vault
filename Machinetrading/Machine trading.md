@@ -58,5 +58,7 @@ Ernest P. Chan
 	从错误中学习 “Boosting involves applying a learning algorithm iteratively to the prediction errors of the model constructed in the previous iteratipn.
 	做法： 应用一种学习算法 使用回归树或者其他 2. 第一棵树预测 第二棵树预测残差 第三棵树继续预测剩下的残差
 
+# 分类树
+
 
 		
