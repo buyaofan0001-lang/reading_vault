@@ -1,0 +1,1 @@
+	Alpha#2: (-1 * correlation(rank(delta(log(volume), 2)), rank(((close - open) / open)), 6)  ： 将个股两日成交量的变动和收益率的排名计算相关性
