@@ -17,11 +17,11 @@
 	既然在捕捉背离：如果单日价差大 -> 量小 & 价差小量大 都代表市场的一种不寻常的状态  
 						价差小 ->量小 & 价差大->量大 更加常规
 						
-	alpha6 变体 (-1 * correlation(high-low, volume, 10)
+	alpha6 变体 (-1 * correlation(high-low, volume, 10)）
 		回测结果
 	  long_only   CAGR 53.30%, Sharpe 1.89, MaxDD -29.17%, Final NAV 7.779
 	  short_only  CAGR -6.08%, Sharpe -0.14, MaxDD -46.43%, Final NAV 0.740
 	  long_short  CAGR 23.30%, Sharpe 3.07, MaxDD  -8.38%, Final NAV 2.734
 
 
-	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：(adv20 < volume）平均20天的交易量如果小于当日volume ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))
+	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：(adv20 < volume）平均20天的交易量如果小于当日volume ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))->delta(close, 7)当日收盘相比7天前收盘的价格
