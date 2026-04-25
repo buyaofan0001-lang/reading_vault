@@ -22,3 +22,6 @@
 	  long_only   CAGR 53.30%, Sharpe 1.89, MaxDD -29.17%, Final NAV 7.779
 	  short_only  CAGR -6.08%, Sharpe -0.14, MaxDD -46.43%, Final NAV 0.740
 	  long_short  CAGR 23.30%, Sharpe 3.07, MaxDD  -8.38%, Final NAV 2.734
+
+
+	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))
