@@ -8,7 +8,17 @@
 
 	Alpha#6: (-1 * correlation(open, volume, 10) ：10天开盘和当日总成交量的相关系数开盘价格如果和总量在10天内高度相关则给他打低分  ->如果10天里面 高开+放量 同时低开加少量则放在低位不买入 ：它在捕捉什么？在捕捉背离 如果高开加单日放量我们认为这里太狂热不对劲 
 	如果低开加大量这里背离了 我们认为有人承接 给高分。
+	回测结果：
+
+	  long_only   CAGR 22.89%, Sharpe 1.00, MaxDD -39.86%, Final NAV 2.690
+	  short_only  CAGR 17.03%, Sharpe 0.72, MaxDD -32.76%, Final NAV 2.127
+	  long_short  CAGR 23.39%, Sharpe 2.90, MaxDD  -5.18%, Final NAV 2.743
+
 	既然在捕捉背离：如果单日价差大 -> 量大 给低分 
 						价差小 ->量小 给高分
 						
-	(-1 * correlation(high-low, volume, 10)
+	alpha6 变体 (-1 * correlation(high-low, volume, 10)
+		回测结果
+	  long_only   CAGR 53.30%, Sharpe 1.89, MaxDD -29.17%, Final NAV 7.779
+	  short_only  CAGR -6.08%, Sharpe -0.14, MaxDD -46.43%, Final NAV 0.740
+	  long_short  CAGR 23.30%, Sharpe 3.07, MaxDD  -8.38%, Final NAV 2.734
