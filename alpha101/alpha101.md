@@ -6,3 +6,5 @@
 
 
 
+	Alpha#6: (-1 * correlation(open, volume, 10) ：10天开盘和当日总成交量的相关系数
+
