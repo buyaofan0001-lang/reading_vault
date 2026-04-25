@@ -24,4 +24,7 @@
 	  long_short  CAGR 23.30%, Sharpe 3.07, MaxDD  -8.38%, Final NAV 2.734
 
 
-	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：(adv20 < volume）平均20天的交易量如果小于当日volume ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))->delta(close, 7)当日收盘相比7天前收盘的价格
+	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：
+	(adv20 < volume）平均20天的交易量如果小于当日volume ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))
+	sign（delta(close, 7)）当日收盘相比7天前收盘的价格差为正则+ 负则-
+	ts_rank(abs(delta(close, 7)), 60)) 在时间序列上排序
