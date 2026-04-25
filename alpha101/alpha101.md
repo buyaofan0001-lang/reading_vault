@@ -4,7 +4,7 @@
 
 	Alpha#5: (rank((open - (sum(vwap, 10) / 10))) * (-1 * abs(rank((close - vwap)))))：sum(vwap, 10)最近10天的平均成交价，(rank((open - (sum(vwap, 10) / 10)))开盘相离最近10日均价的偏离程度 (-1 * abs(rank((close - vwap))))) -> close-vwap今天收盘对价格的偏离程度，如果太大那么就对这个因子进行扣分惩罚 -> 这捕捉的是如果一个股价偏离10天均值 大高开那么如果收盘他还能延续 没有大幅回撤 则给他高分 要买入 ->这是个动量因子
 
-
+ 
 
 	Alpha#6: (-1 * correlation(open, volume, 10) ：10天开盘和当日总成交量的相关系数
 
