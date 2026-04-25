@@ -14,8 +14,8 @@
 	  short_only  CAGR 17.03%, Sharpe 0.72, MaxDD -32.76%, Final NAV 2.127
 	  long_short  CAGR 23.39%, Sharpe 2.90, MaxDD  -5.18%, Final NAV 2.743
 
-	既然在捕捉背离：如果单日价差大 -> 量大 给低分 
-						价差小 ->量小 给高分
+	既然在捕捉背离：如果单日价差大 -> 量小 & 价差小量大 都代表市场的一种不寻常的状态  
+						价差小 ->量小 & 价差大->量大 更加常规
 						
 	alpha6 变体 (-1 * correlation(high-low, volume, 10)
 		回测结果
@@ -24,4 +24,4 @@
 	  long_short  CAGR 23.30%, Sharpe 3.07, MaxDD  -8.38%, Final NAV 2.734
 
 
-	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))
+	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：(adv20 < volume）平均20天的交易量如果小于当日volume ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))
