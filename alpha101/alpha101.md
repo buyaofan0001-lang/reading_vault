@@ -38,7 +38,7 @@
 				回测效果很差 不考虑
 
 
-
+	Alpha#9: ((0 < ts_min(delta(close, 1), 5)) ? delta(close, 1) : ((ts_max(delta(close, 1), 5) < 0) ? delta(close, 1) : (-1 * delta(close, 1))))
 
 
 
