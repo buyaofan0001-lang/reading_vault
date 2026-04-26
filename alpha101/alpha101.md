@@ -31,5 +31,7 @@
 		抓的是放量+60日超跌
 
 	Alpha#8: (-1 * rank(((sum(open, 5) * sum(returns, 5)) - delay((sum(open, 5) * sum(returns, 5)), 10))))
-		
+		(sum(open, 5) * sum(returns, 5))：5天开盘价总和 ** 五天收益总和 
+		 delay((sum(open, 5) * sum(returns, 5)), 10)：延迟10天的5天开盘价总和 ** 五天收益总和 
+			
 
