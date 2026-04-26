@@ -27,4 +27,9 @@
 	Alpha#7: ((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))：
 	(adv20 < volume）平均20天的交易量如果小于当日volume 即当日放量 ->((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7)))
 	sign（delta(close, 7)）当日收盘相比7天前收盘的价格差为正则+ 负则-
-	ts_rank(abs(delta(close, 7)), 60)) 在时间序列上排序 如果今天的close相较于7天的差值在过去60天的振幅
+	ts_rank(abs(delta(close, 7)), 60)) 在时间序列上排序 如果今天的close相较于7天的差值在过去60天的振幅 越大给分越高 
+		抓的是放量+60日超跌
+
+	Alpha#8: (-1 * rank(((sum(open, 5) * sum(returns, 5)) - delay((sum(open, 5) * sum(returns, 5)), 10))))
+		
+
